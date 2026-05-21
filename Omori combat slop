@@ -3329,7 +3329,7 @@ class ShardMirror(Foe):
     def __init__(self, level):
         super().__init__("Shard Mirror", 160, 80, 15, 14, 12, level, max_emo_level=2, enemy_type="boss")
         diff_mult = {"Easy": 0.85, "Normal": 1.0, "Hard": 1.2, "Brutal": 1.4}.get(DIFFICULTY, 1.0)
-        self.max_hp = self.hp = int(1200p * diff_mult)
+        self.max_hp = self.hp = int(12000 * diff_mult)
         self.max_mana = self.mana = int(6000 * diff_mult)
         self.base_atk = int(80 * diff_mult); self.base_dfn = int(60 * diff_mult); self.base_spd = int(60 * diff_mult)
  
