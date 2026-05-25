@@ -1515,17 +1515,17 @@ class SkillLibrary:
             
             emo = Emotions.get_root(user.emotion)
             if emo == "happy": 
-                SkillLibrary._apply_status(user, "Speed+++", 3, battle=battle)
-                if omori != user: SkillLibrary._apply_status(omori, "Speed+++", 3, battle=battle)
-                msg += "\n<DELAY:0.5>  Their Happiness granted Speed+++!"
+                SkillLibrary._apply_status(user, "Speed++", 3, battle=battle)
+                if omori != user: SkillLibrary._apply_status(omori, "Speed++", 3, battle=battle)
+                msg += "\n<DELAY:0.5>  Their Happiness granted Speed++!"
             elif emo == "angry":
-                SkillLibrary._apply_status(user, "Attack+++", 3, battle=battle)
-                if omori != user: SkillLibrary._apply_status(omori, "Attack+++", 3, battle=battle)
-                msg += "\n<DELAY:0.5>  Their Anger granted Attack+++!"
+                SkillLibrary._apply_status(user, "Attack++", 3, battle=battle)
+                if omori != user: SkillLibrary._apply_status(omori, "Attack++", 3, battle=battle)
+                msg += "\n<DELAY:0.5>  Their Anger granted Attack++!"
             elif emo == "sad":
-                SkillLibrary._apply_status(user, "Defense+++", 3, battle=battle)
-                if omori != user: SkillLibrary._apply_status(omori, "Defense+++", 3, battle=battle)
-                msg += "\n<DELAY:0.5>  Their Sadness granted Defense+++!"
+                SkillLibrary._apply_status(user, "Defense++", 3, battle=battle)
+                if omori != user: SkillLibrary._apply_status(omori, "Defense++", 3, battle=battle)
+                msg += "\n<DELAY:0.5>  Their Sadness granted Defense++!"
             return msg
 
         if skill.kind == "basil_herbal":
@@ -5255,7 +5255,7 @@ def get_skill_desc(skill):
     elif k == "im_here": desc = "Redirects ally damage to self for 2 turns. Heal slight HP. Low HP triggers Defense++."
     elif k == "anchor": desc = "Clears 1 debuff, locks emotion, reduces damage and grants Defense+. Heals if Sad/Afraid."
     elif k == "take_it_slow": desc = "Restores HP/MP moderately, grants regen, Focus+, Defense+. 'Feel Fine' if Omori."
-    elif k == "basil_cheer": desc = "Heals user/Omori 20% MP. Boosts Stat based on Emotion by 3 tiers."
+    elif k == "basil_cheer": desc = "Heals user/Omori 20% MP. Boosts Stat based on Emotion by 2 tiers."
     elif k == "basil_herbal": desc = "Heals ally for 75% HP with 20% variance. Restores 1 Energy."
     elif k == "basil_photograph": desc = "Taunts all enemies and Distracts them, lowering Accuracy."
     elif k == "basil_body_slam": desc = "Damage scales off ATK and current Party Energy."
